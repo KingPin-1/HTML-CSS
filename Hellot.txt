@@ -25,7 +25,9 @@ accessing elements:
 
 3 types of selectors:
     Simple Selectors -- By name, id(#) , class(.)'
-    Combinator Seletors -- 
+    Combinator Seletors -- (SPACE " ") , (> immediate) , (+ immediately next sibling) , (~ All siblings)
+
+
 
 
 
