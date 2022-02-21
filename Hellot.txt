@@ -58,6 +58,12 @@ FIXED --same as Absolute but scrolling has no effect
 STICKY -- hybrid of relative and fixed...concept of CONTAINER AND ELEMENT --- element which is sticky is 
     within a CONTAINER
 
++++FLEXBOX+++
+
+Space Distribution
+Allignment
+Responsive
+
 
 
 
