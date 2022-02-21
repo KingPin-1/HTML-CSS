@@ -42,7 +42,20 @@ Relative -- rem , em ,  vh ,vw
 
 content -> padding -> Border -> Margin. Render engine treats HTML elements like rectangles.
 padding is space around content
-border is spacea around HTML element
+margin is spacea around HTML element
+
++++Display+++
+All HTML elements have a default display attribute to allow for layout manipulation.
+Block level elements (div , h1, h2 ,) occupy all available space
+inline level elements (span , a , img) require space as needed.
+
+
++++CSS POSITIONING+++
+STATIC
+Relative
+Absolute
+FIXED
+STICKY
 
 
 
