@@ -51,11 +51,12 @@ inline level elements (span , a , img) require space as needed.
 
 
 +++CSS POSITIONING+++
-STATIC
-Relative
-Absolute
-FIXED
-STICKY
+STATIC -- by default every HTML element is static
+Relative --  TopLeftBottomRIght has an effect , natural flow remains
+Absolute -- TLBR has their effect, natural flow breaks
+FIXED --same as Absolute but scrolling has no effect
+STICKY -- hybrid of relative and fixed...concept of CONTAINER AND ELEMENT --- element which is sticky is 
+    within a CONTAINER
 
 
 
