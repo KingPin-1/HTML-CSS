@@ -60,9 +60,21 @@ STICKY -- hybrid of relative and fixed...concept of CONTAINER AND ELEMENT --- el
 
 +++FLEXBOX+++
 
+FLEXBOX aims at providing a more efficient way to lay out, align 
+and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
+
 Space Distribution
 Allignment
 Responsive
+
+flex-direction ->row , row-reverse , column , column-reverse.
+align-items ... perpendicular to main axes manipulation(CROSS AXES)(flex-start , flex-end , center etc )
+justify-content ... along main axes manipulation(flex-start , flex-end , center , space-around , space-between etc )
+flex-flow:
+order:1
+
+ align-content determines the spacing between lines, while align-items determines how the items as a whole are 
+ aligned within the container. When there is only one line, align-content has no effect.
 
 
 
