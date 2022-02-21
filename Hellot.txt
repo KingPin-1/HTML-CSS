@@ -6,3 +6,7 @@ Important tags <html> <head> and <body> and <title>
 <body> tag encloses all the actual content.
 h1 to h6 are different heading tags with different sizes.
 
+HTML elements have attributes that upon modification give different behavior.
+anchor tags used for hyperlinks in page.
+div tags for division of code so that we can make them into separate blocks.
+
