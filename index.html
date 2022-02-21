@@ -2,6 +2,24 @@
 <html>
     <head>
         <title>Pepcoding</title>
+        <style>
+            h1{
+                color:rgb(233, 16, 16)
+            }
+            #name{
+                background-color:rgb(255, 0, 0);
+            }
+            #email{
+                background-color:rgb(0, 255, 0);
+
+            }
+            #pass{
+                background-color:rgb(0, 0, 255);
+            }
+            #dtl{
+                background-color: lightpink
+            }
+        </style>
     </head>
     <body>
         <!-----HEADING----->
@@ -22,12 +40,58 @@
     <a href="https://www.google.com/">Go to Google.com</a>
 
     <!--Division-->
-    <div>
+    <div class = "Common">
         <p> 
             This is within a div tag.
         </p>
     </div>   
 
     <!--List/-->
+    
+    <!--Unordered List/-->
+
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ul>
+
+    <!--Ordered List/-->
+
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+    </ol>
+
+    <span>
+        <h3>
+            Hamilton's W12:
+        </h3>
+        <img width="10%" src="W12.png" alt="44 Merc">
+    </span>
+
+    <!--FORMS-->
+    <h3>
+        FORM SECTION
+    </h3>
+    <form>
+
+        <label for="name""></label>
+        <input type="text" id = "name">
+
+        <label for="email""></label>
+        <input type="email" id = "email">
+
+        <label for="pass""></label>
+        <input type="password" id = "pass">
+
+        <label for="dtl"></label>
+        <input type="datetime-local" id = "dtl">
+
+    </form>
 
 </html>
