@@ -27,7 +27,22 @@ accessing elements:
     Simple Selectors -- By name, id(#) , class(.)'
     Combinator Seletors -- (SPACE " ") , (> immediate) , (+ immediately next sibling) , (~ All siblings)
 
++++CSS UNITS++
 
+Absolute -- px - pixels -not scalable.
+
+Relative -- rem , em ,  vh ,vw
+    rem -- relative to HTML doc font style .. 1 rem 16 px
+    em -- relative to itself .. if not available..goes to parent
+    vh -- relative to viewport height 
+    vq -- relative to viewport width
+    % == relative to parent
+
++++BOX MODEL+++
+
+content -> padding -> Border -> Margin. Render engine treats HTML elements like rectangles.
+padding is space around content
+border is spacea around HTML element
 
 
 
