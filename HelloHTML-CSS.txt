@@ -1,3 +1,5 @@
+<link rel="icon" href="jail.jpg" type="image/icon type"> to add icon on tab bar
+
 <!DOCTYPE html> tells the type of document
 HTML Elements or tags encloses HTML code/
 Important tags <html> <head> and <body> and <title>

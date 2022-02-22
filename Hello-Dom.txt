@@ -40,6 +40,19 @@ PROPAGATION : flow
 stopPropagation():
 stopImmediatePropagation():
 
++++++++++WINDOW SIZING SCROLLING +++++++++++
+
+scroll(x,y)
+scrollTo(x,y)
+
+these 2 are same ---  work as absolute.
+
+scrollBy(x,y) -- relative
+
+scrollIntoView() -- scroll to an element in the page. -- true and false in parameter --- 
+true means element will be at top -- false means element will be at bottom
+
+getBoundingClientRect()
 
 
  
