@@ -89,6 +89,9 @@ order:1
  border-box: width/height of any element includes padding and borde..ie..content box shrinks to accomodate padding/border.
  so popular that it is rare not to see this applied to the entire page using *{}.
 
++++MEDIA QUERY+++
+To make page responive when viewport is changed as user changes from desktop to tablet to mobile. In other words 
+change the styling depending on what device user is accessing site from.
 
 
  
