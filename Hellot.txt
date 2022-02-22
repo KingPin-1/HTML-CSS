@@ -59,6 +59,8 @@ STICKY -- hybrid of relative and fixed...concept of CONTAINER AND ELEMENT --- el
     within a CONTAINER
 
 +++FLEXBOX+++
+When working with flexbox you need to think in terms of two axes — the main axis and the cross axis. 
+The main axis is defined by the flex-direction property, and the cross axis runs perpendicular to it.
 
 FLEXBOX aims at providing a more efficient way to lay out, align 
 and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
@@ -77,7 +79,17 @@ order:1
  aligned within the container. When there is only one line, align-content has no effect.
 
 
- +++BOX SIZING ++++
+ +++BOX SIZING +++
+
+ content-box is default property of boxsizing. This means if padding / border is added to our content area with predefined
+ height and width values --> actual width is increased due to the added elements. 
+ It gets annoying trying to match dimensions when padding/border/margin is added. borderBox property solves this.
+ actual width/height of any element = width/heigh of content + padding + border etc.
+
+ border-box: width/height of any element includes padding and borde..ie..content box shrinks to accomodate padding/border.
+ so popular that it is rare not to see this applied to the entire page using *{}.
+
+
 
  
 
