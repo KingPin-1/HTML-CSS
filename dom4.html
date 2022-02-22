@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMyShow</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .cont{
+        display: flex;
+        flex-wrap: wrap;
+        margin:2rem;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+
+    .heading1{
+        display:flex;
+        align-content: center;
+    }
+
+    .choices{
+        display:flex;
+        justify-content: center;
+    }
+
+    .MainHead{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .movies{
+        height: 10rem;
+        width:  10rem;
+        background-color: aquamarine;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+        border: 2px solid black;
+        text-align: center;
+        margin: 5rem;
+    }
+
+</style>
+<body>
+    <div class="heading1">
+        <h2 class = "MainHead">Book My Show</h2>
+    </div>
+
+    <div class="choices">
+        <select>
+            <option value="None">None</option>
+            <option value="Action">Action</option>
+            <option value="Comedy">Comedy</option>
+        </select>
+    </div>
+
+    <div class="cont">
+        <div class="movies">
+            <h3 class="heading">Title of Movie1</h3>
+            <p class="price" data-category="Action">Rs 170</p>
+        </div>
+
+        <div class="movies">
+            <h3 class="heading">Title of Movie2</h3>
+            <p class="price" data-category="Comedy">Rs 230</p>
+        </div>
+
+        <div class="movies">
+            <h3 class="heading">Title of Movie3</h3>
+            <p class="price" data-category="Action">Rs 400</p>
+        </div>
+    
+        <div class="movies">
+            <h3 class="heading">Title of Movie4</h3>
+            <p class="price" data-category="Comedy">Rs 300</p>
+        </div>
+    
+        <div class="movies">
+            <h3 class="heading">Title of Movie5</h3>
+            <p class="price" data-category="Action">Rs 150</p>
+        </div>
+    
+        <div class="movies">
+            <h3 class="heading">Title of Movie6</h3>
+            <p class="price" data-category="Action">Rs 100</p>
+        </div>
+    
+        <div class="movies">
+            <h3 class="heading">Title of Movie7</h3>
+            <p class="price" data-category="Comedy">Rs 200</p>
+        </div>
+
+        <div class="movies">
+            <h3 class="heading">Title of Movie8</h3>
+            <p class="price" data-category="Comedy">Rs 299 </p>
+        </div>
+
+    </div>
+
+    <script>
+        let sel = document.querySelector("select");
+        let allMovies = document.querySelectorAll(".movies");
+            sel.addEventListener("change" , (e) => {
+                let selvalue = sel.value;
+                if( selvalue === "none"){
+                    for( let i = 0 ; i < allMovies.length ; i++ )
+                        allMovies[i].style.display = "block";
+                }
+                else
+                {
+                    for ( let i = 0 ; i < allMovies.length ; i++ ){
+                        let pElem = allMovies[i].document.querySelector("p");
+                        let movieValue = allMovies[i].getAttribute("data-catagory");
+                        if( movieValue === selvalue ){
+                            allMovies[i].style.display = "block";
+                        }
+                        else  
+                            allMovies[i].style.display = "mone";
+
+                    }
+                }
+        })
+    </script>
+    
+</body>
+</html>

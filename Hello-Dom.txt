@@ -15,4 +15,14 @@ Both are representations of array but have none of the functionality of arrays.
 length property present which can be used in conjuction with a loop to access their elements using indices.
 
 insertBefore depends on properties of parent node and reference node .
+
+All HTML elements are node but not vice versa
+
++++++++++=Difference in Sibling Nodes & Sibling Elements +++++++++++++++++
+previousElementSibling -> HTML elements only
+nextElementSibling  -> HTML elements only
+previousSibling -> previous node ( ex comments )
+nextSibling-> next node( comment / text / newline etc..)
+
+
  

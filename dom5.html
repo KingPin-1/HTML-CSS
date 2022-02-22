@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeleteAllSiblings</title>
+</head>
+<style> 
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    div{
+        color: yellow;
+        height: 10rem;
+        width: 10rem;
+        margin: 5rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border: 2px solid green;
+        border-radius: 2px;
+        background-color: darkcyan;
+        text-align:center;
+        vertical-align: middle;
+        line-height: 10rem;
+    }
+</style>
+<body>
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card red">6red</div>
+    <div class="card">7</div>
+    <div class="card">8</div>
+    <div class="card">9</div>
+    <div class="card">10</div>
+
+    <script>
+        let redElem = document.querySelector(".red");
+        // let allElem = document.querySelectorAll(".card");
+        // allElem.forEach(card => {
+        //     if( card != redElem)
+        //         card.remove();
+        // })
+        // DeleteAllSiblings(redElem) //comment this out to remove previous and next siblings of div class red
+        
+
+        function DeleteAllSiblings(redElem){
+            let before = redElem.previousElementSibling ;
+            let after = redElem.nextElementSibling;
+
+            while( before ){
+                before.remove();
+                before = redElem.previousElementSibling ;
+            }
+
+            while( after ){
+                after.remove();
+                after = redElem.nextElementSibling ;
+            }
+        }
+    </script>
+    
+</body>
+</html>

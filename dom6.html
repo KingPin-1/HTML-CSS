@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JailMyMouse</title>
+</head>
+<style> 
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cell{
+        /* background-image: url('jail.jpg'); */
+        background-size: contain;
+        /* background-repeat: no-repeat; */
+        margin: auto;
+        margin-top: 15rem;
+        height:15rem;
+        width: 15rem;
+        border: 5px solid black;
+        display: flex;
+
+    }
+</style>
+<body>
+    <div class="cell"></div>
+    <script>
+        let j = document.querySelector(".cell");
+        j.addEventListener("mouseenter" , (e) =>{   
+            j.style.backgroundImage = "url('jail.jpg')";
+            document.body.style.backgroundColor = "black";
+        })
+        j.addEventListener("mouseleave", (e) =>{
+            j.style.backgroundImage = "none";
+            document.body.style.backgroundColor = "white";
+        })
+
+    </script>
+</body>
+</html>
