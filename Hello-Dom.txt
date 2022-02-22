@@ -1,0 +1,18 @@
++++++++++++++++++==
+addEventListener() -- browser functionality to 'listen' for actions and respond as needed.
+ex: button on click should do something--keyboard inputs -- async data -> when data is being fetched by site.
+
+document is an object provided by the DOM that enables us to access all HTML elements within a page and perform
+CRUD operations on them.
+ex: querySelector() returns reference to element needed ( think button or body).
+..innerText . property of HTML elements to provide content between tags dynamically via DOM.
+..createElement("span" or "div" ..etc) to create HTML elements dynamically using DOM.
+..appendChild()..used to add HTML elements dynamically to existing page. 
+SEE FILE dom1.html for practical use of all these.
+
++++NODELIST AND HTMLCollection+++
+Both are representations of array but have none of the functionality of arrays. 
+length property present which can be used in conjuction with a loop to access their elements using indices.
+
+insertBefore depends on properties of parent node and reference node .
+ 
