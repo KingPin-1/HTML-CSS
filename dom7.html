@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phases</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .blue{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        height: 20rem;
+        width: 20rem;
+    }
+    .red{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+        height: 10rem;
+        width: 10rem;
+    }
+    .green{
+        background-color: green;
+        height: 5rem;
+        width: 5rem;
+    }
+</style>
+<body>
+    <div class="blue">
+        <div class="red">
+            <div class="green"></div>
+        </div>
+    </div>
+
+    <script>
+        let blue = document.querySelector(".blue");
+        blue.addEventListener("click" , (e) =>  {
+            if( e.target === e.currentTarget ){
+                alert("Blue was clicked!!");
+            }
+                console.log(e.target , e.currentTarget)
+        })
+
+    </script>
+    
+</body>
+</html>
