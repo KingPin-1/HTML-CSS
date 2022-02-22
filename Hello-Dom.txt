@@ -25,4 +25,21 @@ previousSibling -> previous node ( ex comments )
 nextSibling-> next node( comment / text / newline etc..)
 
 
++++++EVENT PHASES+++++
+
+Target:Element which triggers event listener
+CurrentTarget: Element on which event listener is attached.
+
+Events -> Phases , properties and propagation
+
+PHASES ==>0 NONE, 1 CAPTURING -> 2 TARGET -> 3 BUBBLING
+event starts from document(root). If listener finds same event on its path, it triggers it as well.
+
+
+PROPAGATION : flow
+stopPropagation():
+stopImmediatePropagation():
+
+
+
  
