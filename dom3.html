@@ -24,17 +24,50 @@
         border-radius: 1rem;
         border: 1px solid black;
     }
+    .blue{
+        background-color: blue;
+    }
+    .red{
+        background-color: red;
+    }
+    .green{
+        background-color: green;
+    }
+    .purple{
+        background-color: purple;
+    }
+    .pink{
+        background-color: pink;
+    }
+    .black{
+        background-color: black;
+    }
+    .brown{
+        background-color: brown;
+    }
+    .orange{
+        background-color: orange;
+    }
 
 </style>
 <body>
     <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    <div class="card" data-color="blue"></div>
-    
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="pink"></div>
+    <div class="card" data-color="purple"></div>
+    <div class="card" data-color="black"></div>
+    <div class="card" data-color="brown"></div>
+    <div class="card" data-color="orange"></div>
+    <script>
+        let cards = document.querySelectorAll(".card");
+        cards.forEach(card => {
+            card.addEventListener("click", (e) =>{
+                let dataColor = card.getAttribute("data-color");
+                card.classList.add(dataColor);
+                card.setAttribute(data-color ,  "used");
+            })
+        })
+    </script>
 </body>
 </html>
