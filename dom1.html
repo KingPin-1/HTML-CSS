@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloSpam</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    html{      
+        /* background-color: lightcyan;
+        height: 50vh;
+        width: 50VW;  */
+        /* display: flex; */
+        /* flex-direction: row-reverse; */
+        /* justify-content: center; */
+        /* align-content: center; */
+    }
+    button{
+        background-color: gray;
+        border : 2px solid black;
+        border-radius: 3px ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        display: block;
+    }
+    div{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: smaller;
+        color: red;
+    }
+</style>
+<body>
+    <button>Say Hello</button>
+    <script>
+        // selecting the button and listening on it for a click . 
+        let btn = document.querySelector("button");
+        // second function is the action to be performed on event occurence. 
+        btn.addEventListener("click" , function(e) {
+            // creating new div element. 
+            let divElement = document.createElement("div");
+            divElement.innerText = "Hello!!" //text not in brackets!!
+            // adding text to div element. 
+            let body = document.querySelector("body");
+            body.appendChild(divElement);
+            // Selecting Body tag and appending to its end. 
+        });
+    </script>
+    
+</body>
+</html>
