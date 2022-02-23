@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapsAndShift</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #pass{
+        width: 20rem ;
+        height: 100%;
+    }
+</style>
+<body>
+    <input type="text" id="pass" placeholder="Type here...">
+    <h1>Caps On!!</h1>
+    <h2 style="color: yellow;">Shift On!!</h2>
+    <script>
+        let iElem = document.querySelector("#pass");
+        let pElem = document.querySelector("h1");
+        let sElem = document.querySelector("h2");
+        let shiftKey;
+        let caps;
+        iElem.addEventListener("keydown" , (e) => {
+
+            if( !shiftKey || caps ){
+                e.preventDefault();
+                
+            }else{
+                sElem.style.display = "block";
+            }
+
+        })
+        
+
+        document.documentElement.addEventListener("keydown" , (e) => {
+            if (e.getModifierState("CapsLock")) {
+                caps = true
+                pElem.style.display = "block";
+            } 
+            else {
+                caps = false;
+                pElem.style.display = "none";
+            }
+
+        })
+
+        document.documentElement.addEventListener("keydown" , (e) => {
+            if( e.key === "Shift")  {
+                shiftKey = true;
+                sElem.style.display = "block";
+            }
+        })
+
+        document.documentElement.addEventListener("keyup" , (e) => {
+            if( e.key === "Shift") {
+                shiftKey = false;
+                sElem.style.display = "none";
+            }
+        })
+        
+
+    </script>
+    
+</body>
+</html>
