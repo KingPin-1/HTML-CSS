@@ -61,6 +61,9 @@ e.preventDefault() is used to prevent default functionality of a tag / element.
 for ex; in dom23 it is used to prevent form tag function of talking to a backend as there is no backend there.
 also used in shift caps lock to prevent input in either case.
 
+SEE dom24 to implement media queries without using media queries.
+
+
 
 
 
