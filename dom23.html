@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataBase with preventDefault</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    table{
+        width: 30%;
+        background-color: lightgray;
+        border: 1px solid black;
+    }
+    thead{
+        font-size: large;
+        background-color: black;
+        color: white;
+    }
+    td{
+        border: 1px dashed lightcoral;
+        font-family: Roboto , 'Times New Roman', Times, serif;
+        font-size: medium;
+        text-align: center;
+    }
+    input{
+        margin: 3rem .5rem;
+    }
+</style>
+<body>
+    <h1 class="main">DATABASE</h1>
+
+    <table class="table">
+        <thead>
+            <th>SNO</th>
+            <th>NAME</th>
+            <th>MARKS</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Rohan</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jesus</td>
+                <td>44</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Max</td>
+                <td>33</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form action="" class="form">
+        <label for="name">Name: 
+            <input type="text" , placeholder="name" , id = "name">
+        </label><label for="marks">Marks:
+            <input type="number" , placeholder="marks" , id = "marks">
+        </label>
+        <button class="submit">Submit</button>
+    </form>
+
+    <script>
+
+        let sb = document.querySelector(".submit");
+        sb.addEventListener("click" , (e) => {
+            e.preventDefault();
+            let name = document.querySelector("#name").value;   
+            let marks = document.querySelector("#marks").value;   
+            let sno = document.querySelectorAll("tbody tr").length + 1;
+            
+            let tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td>${sno}</td>
+                <td>${name}</td>
+                <td>${marks}</td>`;
+
+            let tbody = document.querySelector("tbody");
+            tbody.appendChild(tr);
+        })
+
+    </script>
+    
+</body>
+</html>

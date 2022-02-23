@@ -57,5 +57,11 @@ true means element will be at top -- false means element will be at bottom
 getBoundingClientRect() -- The getBoundingClientRect() method returns the 
         size of an element and its position relative to the viewport.
 
+e.preventDefault() is used to prevent default functionality of a tag / element.
+for ex; in dom23 it is used to prevent form tag function of talking to a backend as there is no backend there.
+also used in shift caps lock to prevent input in either case.
+
+
+
 
  
