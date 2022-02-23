@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestedBoxRemove Using Three Methods</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pink{
+        height: 20rem;
+        width: 20rem;
+        background-color: pink;
+    }
+    .blue{
+        height: 75%;
+        width: 75%;
+        background-color: blue;
+    }
+    .green{
+        height: 75%;
+        width: 75%;
+        background-color: green;
+    }
+    .red{
+        height: 75%;
+        width: 75%;
+        background-color: yellow;
+    }
+</style>
+<body>
+    <div class="pink">
+        <div class="blue">
+            <div class="green">
+                <div class="red"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let divElem = document.querySelector("div");
+
+        // iterative
+        // while(divElem.children.length > 0 ){
+        //     divElem = divElem.children[0];
+        // }
+        // divElem.remove();
+
+        // RECURSIVE
+        // function removeLast(divElem){
+        //     if(divElem.children.length > 0 ){
+        //         removeLast(divElem.children[0]);
+        //     }
+        //     else{    
+        //         divElem.remove();
+        //     }
+        // }
+        // removeLast(divElem);   
+
+        let alldivElem = document.querySelectorAll("div");    
+        alldivElem[3].remove();
+        //single line -- when you know index of item to be deleted!!
+
+
+
+    </script>
+    
+</body>
+</html>
