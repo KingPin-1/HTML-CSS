@@ -79,6 +79,9 @@ SEE dom24 to implement media queries without using media queries.
 dom25 is countdown timer that uses setInterval to perform some funciton repeatedly in some intervals...it returns an id 
 which can then be sent to clearInterval() to stop the process. Both of them are in-built browser functions.
 
+dom26 is loading animation that uses setTimeout -- inbuilt browser web api.
+The setTimeout() method calls a function after a number of milliseconds.
+
 
 
 
