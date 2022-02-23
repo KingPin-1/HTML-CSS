@@ -63,6 +63,10 @@ also used in shift caps lock to prevent input in either case.
 
 SEE dom24 to implement media queries without using media queries.
 
+dom25 is countdown timer that uses setInterval to perform some funciton repeatedly in some intervals...it returns an id 
+which can then be sent to clearInterval() to stop the process. Both of them are in-built browser functions.
+
+
 
 
 
